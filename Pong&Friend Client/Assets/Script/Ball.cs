@@ -32,19 +32,6 @@ public class Ball : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = dir * speed;
 
         }
-
-        if (col.gameObject.tag == "Goal")
-        {
-            Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            if (rb.velocity.x > 0)
-            {
-                gm.p2Score++;
-            } else {
-                gm.p1Score++;
-            }
-            gm.spawnNew();
-            Destroy(gameObject);
-        }
     }
 
     void BallStart()
