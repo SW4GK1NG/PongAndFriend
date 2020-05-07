@@ -9,6 +9,7 @@ public class GameMaster : MonoBehaviour
 
     public Text midText;
     public GameObject ResetButton;
+    public FatHead player;
 
 
     // Start is called before the first frame update
@@ -40,5 +41,6 @@ public class GameMaster : MonoBehaviour
     {
         midText.text = "";
         ResetButton.SetActive(false);
+        player.gameEnded = false;
     }
 }

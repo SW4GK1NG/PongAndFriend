@@ -88,5 +88,6 @@ public class FatHead : MonoBehaviour
         transform.position = Vector2.zero;
         socket.Emit("Reset");
         gm.Reset();
+        gameEnded = false;
     }
 }
